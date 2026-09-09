@@ -12,12 +12,10 @@ variable "ec2-tags" {
         Name = "function-demo"
         Environment ="prod"
     }
-  
 }
 
 variable "sg-tags" {
     default = {
         Name = "function-demo"
     }
-  
 }

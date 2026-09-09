@@ -19,5 +19,6 @@ resource "aws_route53_record" "www" {
   type    = "A"
   ttl     = 1
   records = [lookup(aws_instance.example,"frontend").public_ip]
+  #here lookup is function
   allow_overwrite = true
 }
